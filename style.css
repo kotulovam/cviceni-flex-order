@@ -4,10 +4,15 @@
 :before {
   box-sizing: border-box;
 }
+
 .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   border: 1px solid #bfd6e6;
   background-color: #dde9f3;
 }
+
 .activity {
   margin: 10px;
   background-size: contain;
@@ -20,18 +25,22 @@
 }
 
 .cook {
+  order: -1;
   background-image: url("img/cook.jpg");
 }
 
 .code {
+  order: -2;
   background-image: url("img/code.jpg");
 }
 
 .family {
+  order: -2;
   background-image: url("img/family.jpg");
 }
 
 .netflix {
+  order: -1;
   background-image: url("img/netflix.jpg");
 }
 
